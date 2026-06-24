@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="800" viewBox="0 0 1280 800" data-app="Xyris">
+    <defs>
+        <linearGradient id="linearGradient-q5e35TidM6kRqWw8Ywu9ac" x1="289" y1="400" x2="991" y2="400" gradientTransform="matrix(0.0014286,0,0,0.0034489,-0.4142935,-0.8795719)">
+            <stop offset="0" stop-color="red">
+            </stop>
+            <stop offset=".5" stop-color="#ff0">
+            </stop>
+            <stop offset="1" stop-color="#8cc63f">
+            </stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-6fJ16sqYx3NW6RQ3Pq5x8n" x1="289" y1="387.97" x2="991" y2="387.97" gradientTransform="matrix(0.0415282,0,0,0.0415282,-25.5776386,-15.6117001)">
+            <stop offset="0" stop-color="red">
+            </stop>
+            <stop offset=".5" stop-color="#ff0">
+            </stop>
+            <stop offset="1" stop-color="#8cc63f">
+            </stop>
+        </linearGradient>
+        <radialGradient id="radialGradient-1qUxvTcpA9QRmMpuFqtZmJ" cx="640" cy="399.75" fx="640" fy="399.75" r="537.45" gradientTransform="matrix(0.0007813,0,0,0.001225,0,0.0125)">
+            <stop offset="0" stop-color="rgb(34, 34, 34)">
+            </stop>
+            <stop offset="1" stop-color="#000">
+            </stop>
+        </radialGradient>
+        <filter id="filter-rtgmC5KPVt2UYeXsXgh8SF">
+            <feGaussianBlur stdDeviation="5" result="blurred">
+            </feGaussianBlur>
+            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="0.8" result="neonColor">
+            </feFlood>
+            <feComposite in="neonColor" in2="blurred" operator="in">
+            </feComposite>
+            <feMerge>
+                <feMergeNode>
+                </feMergeNode>
+                <feMergeNode in="SourceGraphic">
+                </feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient id="linearGradient-cqHubMC6tigb9QSJSQeFQ6">
+            <stop offset="0%" stop-color="rgb(255, 0, 0)">
+            </stop>
+            <stop offset="50%" stop-color="rgb(255, 255, 0)">
+            </stop>
+            <stop offset="100%" stop-color="rgb(140, 198, 63)">
+            </stop>
+        </linearGradient>
+        <filter id="filter-bBjwQsoWVRmWZXPt7QVGrc">
+            <feDropShadow dx="5" dy="5" stdDeviation="5" flood-opacity="0.8">
+            </feDropShadow>
+        </filter>
+    </defs>
+    <g id="Layer_1">
+        <rect width="1280" height="800" fill="url(#radialGradient-1qUxvTcpA9QRmMpuFqtZmJ)">
+        </rect>
+    </g>
+    <g id="Layer_2" opacity="0.35" transform-origin="center" style="transform-box: fill-box; mix-blend-mode: soft-light;">
+        <g transform-origin="center" style="transform-box: fill-box;">
+            <animateTransform attributeName="transform" type="translate" begin="-0.00001" dur="8.00002" keyTimes="0; 0.0625; 0.75; 0.8125; 1" values="-1100, 0;0, 0;100, 0;1100, 0;1100, 0" fill="freeze" additive="sum" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+            </animateTransform>
+            <path d="M159.73,400V0h102.16v400h-102.16Z" fill="#fff">
+            </path>
+            <path d="M422.44,0l153.51,243.78-2.16-243.78h97.84v400h-88.65l-152.97-241.08,2.16,241.08h-97.84V0h88.11Z" fill="#fff">
+            </path>
+            <path d="M744.59,400V0h218.38v89.73h-116.22v68.11h111.89v89.73h-111.89v152.43h-102.16Z" fill="#fff">
+            </path>
+            <path d="M1018.1,400V0h102.16v400h-102.16Z" fill="#fff">
+            </path>
+        </g>
+        <g transform-origin="center" style="transform-box: fill-box;">
+            <animateTransform attributeName="transform" type="translate" begin="-0.00001" dur="8.00002" keyTimes="0; 0.0625; 0.75; 0.8125; 1" values="1250, 0;0, 0;-100, 0;-1250, 0;-1250, 0" fill="freeze" additive="sum" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0 0 1 1" repeatCount="indefinite">
+            </animateTransform>
+            <path d="M146.49,400l153.51,243.78-2.16-243.78h97.84v400h-88.65l-152.97-241.08,2.16,241.08H58.38v-400h88.11Z" fill="#fff">
+            </path>
+            <path d="M468.65,800v-400h102.16v400h-102.16Z" fill="#fff">
+            </path>
+            <path d="M691.35,800v-310.27h-78.92v-89.73h259.46v89.73h-78.38v310.27h-102.16Z" fill="#fff">
+            </path>
+            <path d="M1001.08,800v-145.41l-119.46-254.59h110.81l59.46,160.54,60-160.54h109.73l-118.38,254.59v145.41h-102.16Z" fill="#fff">
+            </path>
+        </g>
+    </g>
+    <g id="Layer_3" style="mix-blend-mode: normal;">
+        <path d="M845.01,581.98c-27.04,0-54.17-6.13-78.46-17.74-18.58-8.87-35.48-20.83-50.2-35.56l-76.34-76.34-76.34,76.34c-14.73,14.73-31.62,26.69-50.22,35.56-24.28,11.6-51.42,17.73-78.45,17.73s-54.17-6.13-78.47-17.74c-18.58-8.87-35.48-20.83-50.2-35.56-14.64-14.64-26.61-31.52-35.55-50.17-11.63-24.36-17.77-51.49-17.77-78.53s6.13-54.17,17.74-78.46c8.86-18.58,20.83-35.48,35.56-50.2,14.73-14.73,31.62-26.69,50.22-35.56,24.28-11.6,51.42-17.73,78.45-17.73s54.17,6.13,78.46,17.74c18.71,8.98,35.59,20.94,50.23,35.58l76.34,76.34,76.34-76.34c14.65-14.65,31.52-26.61,50.17-35.55,24.36-11.63,51.49-17.77,78.53-17.77s54.17,6.13,78.46,17.74c18.58,8.87,35.48,20.83,50.2,35.56,14.73,14.73,26.69,31.62,35.56,50.22,11.6,24.28,17.73,51.42,17.73,78.45s-6.13,54.17-17.74,78.46c-8.98,18.71-20.94,35.59-35.59,50.23-14.73,14.73-31.62,26.69-50.22,35.56-24.28,11.6-51.42,17.73-78.45,17.73ZM692.33,400.02l76.34,76.34c8.76,8.76,18.77,15.86,29.76,21.1,29.17,13.93,64,13.93,93.16,0,10.99-5.25,21.01-12.35,29.77-21.11,8.72-8.72,15.84-18.77,21.17-29.86,13.9-29.1,13.9-63.92-.03-93.08-5.25-11-12.34-21.01-21.11-29.77s-18.77-15.86-29.76-21.1c-29.18-13.93-64-13.93-93.16,0-11.03,5.29-21.08,12.41-29.8,21.14l-76.34,76.34ZM434.98,292.09c-16,0-32,3.48-46.59,10.45-11,5.25-21.01,12.35-29.77,21.11s-15.86,18.77-21.1,29.75c-13.94,29.18-13.94,64,0,93.16,5.29,11.03,12.41,21.08,21.14,29.79,8.76,8.76,18.77,15.86,29.76,21.1,29.18,13.94,64,13.93,93.16,0,11-5.25,21.01-12.35,29.77-21.11l76.34-76.34-76.34-76.34c-8.72-8.72-18.77-15.84-29.86-21.17-14.54-6.94-30.51-10.42-46.49-10.42Z" fill="rgb(0, 0, 0)" style="mix-blend-mode: normal;" filter="url(#filter-bBjwQsoWVRmWZXPt7QVGrc)">
+        </path>
+        <g filter="url(#filter-rtgmC5KPVt2UYeXsXgh8SF)">
+            <path d="M627.31,387.32l-89.81-89.81c-11.98-11.98-25.57-21.43-40.01-28.36-39.43-18.83-85.6-18.83-125.04,0-14.47,6.9-28,16.35-39.99,28.33s-21.43,25.52-28.33,39.99c-18.83,39.43-18.83,85.6,0,125.04,6.93,14.44,16.38,28.03,28.36,40.01,11.98,11.98,25.52,21.43,39.99,28.33,39.43,18.83,85.61,18.83,125.04,0,14.47-6.9,28-16.35,39.99-28.33l205.01-205.01c11.98-11.98,25.57-21.43,40.01-28.36,39.43-18.83,85.6-18.83,125.04,0,14.47,6.9,28,16.35,39.99,28.33,11.98,11.98,21.43,25.52,28.33,39.99,18.83,39.43,18.83,85.6,0,125.04-6.93,14.44-16.38,28.03-28.36,40.01-11.98,11.98-25.52,21.43-39.99,28.33-39.43,18.83-85.61,18.83-125.04,0-14.47-6.9-28-16.35-39.99-28.33l-102.51-102.51" stroke="url(#linearGradient-q5e35TidM6kRqWw8Ywu9ac)" stroke-linecap="round" stroke-width="2px" fill="none" stroke-linejoin="round">
+            </path>
+            <polygon points="633.54 375.93 639.99 400.01 615.91 393.56 633.54 375.93" fill="url(#linearGradient-6fJ16sqYx3NW6RQ3Pq5x8n)">
+            </polygon>
+        </g>
+    </g>
+    <g id="Layer_4">
+        <path d="M742.51,297.51c11.98-11.98,25.57-21.43,40.01-28.36,39.43-18.83,85.6-18.83,125.04,0,14.47,6.9,28,16.35,39.99,28.33,11.98,11.98,21.43,25.52,28.33,39.99,18.83,39.43,18.83,85.6,0,125.04-6.93,14.44-16.38,28.03-28.36,40.01-11.98,11.98-25.52,21.43-39.99,28.33-39.43,18.83-85.61,18.83-125.04,0-14.47-6.9-28-16.35-39.99-28.33l-205.01-205.01c-11.98-11.98-25.57-21.43-40.01-28.36-39.43-18.83-85.6-18.83-125.04,0-14.47,6.9-28,16.35-39.99,28.33-11.98,11.98-21.43,25.52-28.33,39.99-18.83,39.43-18.83,85.6,0,125.04,6.93,14.44,16.38,28.03,28.36,40.01,11.98,11.98,25.52,21.43,39.99,28.33,39.43,18.83,85.61,18.83,125.04,0,14.47-6.9,28-16.35,39.99-28.33l205.01-205.01Z" fill="none" stroke-linejoin="round" stroke="url(#linearGradient-cqHubMC6tigb9QSJSQeFQ6)" stroke-linecap="round" stroke-width="60px" stroke-dasharray="1,7" pathLength="8">
+            <animate attributeName="stroke-dashoffset" keyTimes="0; 1" values="0;8" begin="-0.00001" dur="5.00002" fill="freeze" calcMode="spline" keySplines="0 0 1 1" repeatCount="indefinite">
+            </animate>
+        </path>
+    </g>
+</svg>
