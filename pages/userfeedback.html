@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/userfeedback.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+</head>
+<body class="bg text">
+
+    <!--nav bar-->
+<nav class="navbar navbar-expand-lg text surface">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Customer Plus
+        </a>
+
+        <!-- Mobile Controls -->
+        <div class="d-flex d-lg-none align-items-center gap-2 ms-auto">
+            <button class="btn border-0 icon-bg" id="theme">
+                <i class="bi bi-sun-fill fs-4 d-none" id="light"></i>
+                <i class="bi bi-moon-fill fs-4" id="dark"></i>
+            </button>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link " href="user.html">Dashboard</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Feedback</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-lg-row align-items-center gap-2 mt-3 mt-lg-0">
+
+                <!-- Desktop Theme -->
+                <button class="btn border-0 icon-bg d-none d-lg-block" id="theme2">
+                    <i class="bi bi-sun-fill fs-4 d-none" id="light2"></i>
+                    <i class="bi bi-moon-fill fs-4" id="dark2"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<!--Table-->
+
+<div class="container mt-5 d-flex justify-content-between">
+    <p class="fs-5 fw-medium ">Your Feedbacks</p class="fs-5 fw-medium"> 
+        
+    <div class="filters d-flex gap-3 align-items-center">
+        <!--Department filter-->
+        <select name="department" id="departmentFilter" class="form-select">
+            <option value="All Departments">All Departments</option>
+            <option value="HealthCare">Health Care</option>
+            <option value="Infrastructure">Infrastructure</option>
+            <option value="LawAndOrder">Law and Order</option>
+            <option value="Administration">Administration</option>
+        </select>
+
+        <!--Status Filter--> 
+        <select name="status" id="statusFilter" class="form-select">
+            <option value="All status">All status</option>
+            <option value="HealthCare">Health Care</option>
+            <option value="Infrastructure">Infrastructure</option>
+            <option value="LawAndOrder">Law and Order</option>
+            <option value="Administration">Administration</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="container table-responsive mt-3">
+    <table class="table table-striped text table-bordered">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">S.no</th>
+                <th scope="col">Title</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Feedback</th>
+                <th scope="col">Status</th>
+                <th scope="col">Submitted Date</th>
+                <th scope="col">Responsive Date</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+
+        </tbody>
+    </table>
+</div>
+
+
+    <script type="module" src="../script/userfeedback.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -10,7 +10,8 @@ if(!user) {
 
 console.log(user.name);
 console.log(user.id);
-
+let firstName = document.getElementById('name').value
+document.getElementById('name').innerText = `Welcome ${user.name} ,`
 
 //adding feeback 
 
@@ -41,7 +42,8 @@ saveFeedbackBtn.addEventListener('click' , async  function(){
             rating : rating.value , 
             createdOn : new Date().toISOString() , 
             active:1 , 
-            remarks:""
+            remarks:"" , 
+            status:'Pending' 
         }
 
         await fetch(`${FEEDBACKAPI}` , {
@@ -51,15 +53,18 @@ saveFeedbackBtn.addEventListener('click' , async  function(){
             },
             body:JSON.stringify(feebackData)
         })
+
+
+        //closing the modal 
+        title.value = '' 
+        feedback.value = '' 
+        rating.value = ''
+        let modalElement = document.getElementById('feedbackModal') 
+        let modal = bootstrap.Modal.getInstance(modalElement) 
+        modal.hide()
     }
 
 
-    //closing the modal 
-    title.value = '' 
-    feedback.value = '' 
-    rating.value = ''
-    let modalElement = document.getElementById('feedbackModal') 
-    let modal = bootstrap.Modal.getInstance(modalElement) 
-    modal.hide()
+    
 
 })
