@@ -9,6 +9,49 @@
       "id": "yPXBVewu6f0"
     }
   ],
-  "feedback": [],
+  "feedback": [
+    {
+      "userId": "yPXBVewu6f0",
+      "username": "Tharnish Palanisamy",
+      "email": "tharnishpalanisamy3@gmail.com",
+      "title": "1st",
+      "department": "HealthCare",
+      "feedback": "No one is working propelry",
+      "rating": "1",
+      "createdOn": "2026-06-25T14:05:00.478Z",
+      "active": 1,
+      "remarks": "-",
+      "status": "Pending",
+      "id": "_Bvw5fjFueY"
+    },
+    {
+      "userId": "yPXBVewu6f0",
+      "username": "Tharnish Palanisamy",
+      "email": "tharnishpalanisamy3@gmail.com",
+      "title": "road",
+      "department": "Infrastructure",
+      "feedback": "Road has too many potholes",
+      "rating": "2",
+      "createdOn": "2026-06-25T14:06:12.574Z",
+      "active": 1,
+      "remarks": "-",
+      "status": "Pending",
+      "id": "_bQ1pQb8XvY"
+    },
+    {
+      "userId": "yPXBVewu6f0",
+      "username": "Tharnish Palanisamy",
+      "email": "tharnishpalanisamy3@gmail.com",
+      "title": "crime",
+      "department": "LawAndOrder",
+      "feedback": "so many murders",
+      "rating": "2",
+      "createdOn": "2026-06-25T14:06:56.943Z",
+      "active": 1,
+      "remarks": "-",
+      "status": "Pending",
+      "id": "derP4TABdNM"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
