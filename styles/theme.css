@@ -123,3 +123,14 @@
 .view{
     background: var(--primary-hover) !important;
 }
+
+
+.menu-item.active{
+    background:var(--primary-hover) !important;
+    color:white !important;
+}
+
+.menu-item:hover{
+    background: var(--primary-hover); 
+    color: #F8FAFC !important; 
+}

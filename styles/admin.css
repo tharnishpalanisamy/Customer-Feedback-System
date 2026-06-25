@@ -25,18 +25,18 @@
     font-weight: 500;
 }
 
-.side .nav-link:hover{
-    background: #eef2ff; 
-    color: #4f46e5; 
+.logoutBtn:hover{
+    background: red !important; 
+    color: white !important;
 }
 
-.sidebar .nav-link.active{
+/* .sidebar .menu-item.active{
 
     background:#0EA5E9;
 
     color:white !important;
 
-}
+} */
 .main{
     flex: 1; 
     margin-left: 250px; 
