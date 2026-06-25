@@ -9,3 +9,11 @@
 .undefined{
     background: #33a65f !important;
 }
+
+i{
+    cursor: pointer;
+}
+
+.blocked{
+    cursor: not-allowed !important;
+}
