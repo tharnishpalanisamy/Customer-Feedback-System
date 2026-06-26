@@ -54,7 +54,7 @@ registerBtn.addEventListener('click' , async function(){
             name:name.value , 
             email:email.value , 
             password:password.value ,
-            role:'user' , 
+            role:'User' , 
             createdOn:new Date().toISOString() 
         }
 

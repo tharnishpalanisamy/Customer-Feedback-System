@@ -1,0 +1,13 @@
+i.bi{
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+i.bi:hover{
+    transform: scale(1.2);
+}
+
+.blocked{
+    cursor: not-allowed !important;
+}

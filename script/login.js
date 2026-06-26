@@ -21,8 +21,8 @@ loginBtn.addEventListener('click' , async function(){
     let userData = await fetch(`${USERSAPI}?email=${email.value}&password=${password.value}`) 
     let user = await userData.json() 
 
-    if(user.length == 1 && role.value == 'user') {
-        if (user[0].role == 'user' ) {
+    if(user.length == 1 && role.value == 'User') {
+        if (user[0].role == 'User' ) {
         localStorage.setItem('user' , JSON.stringify(user[0]))
         window.location.href = './user.html'
         }
@@ -30,8 +30,8 @@ loginBtn.addEventListener('click' , async function(){
             alert('Wrong role selected')
         }
     }
-    else if(user.length == 1 && role.value == 'admin') {
-        if (user[0].role == 'admin' ) {
+    else if(user.length == 1 && role.value == 'Admin') {
+        if (user[0].role == 'Admin' ) {
         localStorage.setItem('user' , JSON.stringify(user[0]))
         window.location.href = './admin.html'
         }

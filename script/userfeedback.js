@@ -57,8 +57,6 @@ function createFeedback(feedbacks){
         return;
     }
     
-
-
     feedbacks.forEach((feedback,index) =>{
         let createdDate = new Date(feedback.createdOn) 
         let n =  Number(feedback.rating)
