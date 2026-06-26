@@ -71,3 +71,11 @@
 a{
     cursor: pointer;
 }
+
+.Responded{
+    background: #33a65f !important;
+}
+
+.Pending{
+    background: #EAB308 !important;
+}

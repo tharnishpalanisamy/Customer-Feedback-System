@@ -125,7 +125,7 @@
                             <h2 id="totalFeedback">0</h2>
                         </div>
                         <div class="card-footer">
-                            <a class="d-flex justify-content-between">
+                            <a href="adminfeedback.html" class="d-flex justify-content-between">
                                 <span>View more</span>
                                 <span class="arrow"><i class="bi bi-arrow-right"></i></span>
                             </a>
@@ -143,7 +143,7 @@
                             <h2 id="pendingCount">0</h2>
                         </div>
                         <div class="card-footer">
-                            <a class="d-flex justify-content-between">
+                            <a id="pendingView"  class="d-flex justify-content-between">
                                 <span>View more</span>
                                 <span class="arrow"><i class="bi bi-arrow-right"></i></span>
                             </a>
@@ -160,7 +160,7 @@
                             <h2 id="respondedCount">0</h2>
                         </div>
                         <div class="card-footer">
-                            <a class="d-flex justify-content-between">
+                            <a id="respondedView"  class="d-flex justify-content-between">
                                 <span>View more</span>
                                 <span class="arrow"><i class="bi bi-arrow-right"></i></span>
                             </a>
@@ -177,7 +177,7 @@
                             <h2 id="averageRating">0%</h2>
                         </div>
                         <div class="card-footer">
-                            <a class="d-flex justify-content-between">
+                            <a id="averageRatingView" class="d-flex justify-content-between">
                                 <span>View more</span>
                                 <span class="arrow"><i class="bi bi-arrow-right"></i></span>
                             </a>
@@ -196,9 +196,10 @@
                 </div>
 
                 <div class="table-responsive">
-                    <table class="table align-middle mb-0">
+                    <table class="table align-middle mb-0 table-bordered">
                         <thead>
-                            <tr>
+                            <tr class="table-primary">
+                                <th>Title</th>
                                 <th>User</th>
                                 <th>Department</th>
                                 <th>Rating</th>
@@ -212,7 +213,7 @@
             </div>
 
             <!--Rating bar chart--> 
-            <div class="card shadow-sm">
+            <div class="card shadow-sm w-50">
                 <div class="card-header bg-white">
                     <h5 class="mb-0">
                         Rating Distribution
@@ -220,32 +221,33 @@
                 </div>
 
                 <div class="card-body">
-                    <p class="mb-1">⭐⭐⭐⭐⭐</p>
+                    <p class="mb-1">⭐⭐⭐⭐⭐ <span class="fiveCount text"></span></p>
                     <div class="progress mb-3">
-                        <div class="progress-bar bg-success" style="width: 85%;"></div>
+                        <div class="progress-bar bg-success fiveStar" ></div>
                     </div>
                     
-                    <p class="mb-1">⭐⭐⭐⭐</p>
+                    <p class="mb-1">⭐⭐⭐⭐ <span class="fourCount text"></span></p>
                     <div class="progress mb-3">
-                        <div class="progress-bar bg-primary" style="width: 60%;"></div>
+                        <div class="progress-bar bg-primary fourStar" ></div>
                     </div>
 
-                    <p class="mb-1">⭐⭐⭐</p>
+                    <p class="mb-1">⭐⭐⭐ <span class="threeCount text"></span></p>
                     <div class="progress mb-3">
-                        <div class="progress-bar bg-info" style="width: 65%"></div>
+                        <div class="progress-bar bg-info threeStar"></div>
                     </div>
 
-                    <p class="mb-1">⭐⭐</p>
+                    <p class="mb-1">⭐⭐ <span class="twoCount text"></span></p>
                     <div class="progress mb-3">
-                        <div class="progress-bar bg-warning" style="width: 40%;"></div>
+                        <div class="progress-bar bg-warning twoStar" ></div>
                     </div>
 
-                    <p class="mb-1">⭐</p>
+                    <p class="mb-1">⭐ <span class="oneCount text"></span></p>
                     <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" style="width: 50%;"></div>
+                        <div class="progress-bar bg-danger oneStar" ></div>
                     </div>
                 </div>
             </div>
+            
         </main>
     </div>
 
@@ -299,6 +301,83 @@
             </ul>
         </div>
     </div>
+
+
+
+<!--View Modal--> 
+
+<div class="modal fade" id="viewFeedbackModal" tabindex="-1">
+    <div class=" modal-dialog modal-dialog-center modal-md">
+        <div class="modal-content rounded-4 shadow border-0">
+
+            <!--model header--> 
+            <div class="modal-header py-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="bg-primary bg-opacity-10 rounded-3 p-2">
+                        <i class="bi bi-chat-left-text text-primary fs-4 modal-icon"></i>
+                    </div>
+                    <h4 class="fw-bold mb-0 title"></h4>
+                </div>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+
+            <!--Modal Body --> 
+            <div class="modal-body px-4 py-3">
+                <div class="d-flex align-items-center gap-3 py-2 border-bottom">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-2">
+                        <i class="bi bi-person text-primary fs-5 modal-icon"></i>
+                    </div>
+                    <div>
+                        <small class="text-secondary">Submitted By</small>
+                        <div class="fw-semibold modalName">Name</div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 py-2 border-bottom">
+                    <div class="rounded-circle bg-warning bg-opacity-10 p-2">
+                        <i class="bi bi-star text-warning fs-5 modal-icon"></i>
+                    </div>
+                    <div>
+                        <small class="text-secondary">Rating</small>
+                        <div class="text-warning fs-5 modalRating">
+                            rating
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 py-2">
+                    <div class="rounded-circle bg-success bg-opacity-10 p-2">
+                        <i class="bi bi-calendar-event text-success fs-5 modal-icon"></i>
+                    </div>
+
+                    <div>
+                        <small class="text-secondary">Submitted On</small>
+                        <div class="fw-semibold modalDate">26 Jun 2026</div>
+                    </div>
+                </div>
+
+
+                <div class="bg-light rounded-3 p-3 mt-3">
+                    <div class="fw-semibold text-primary mb-2">
+                        Feedback
+                    </div>
+
+                    <p class="mb-0 modalFeedback">
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <a href="adminfeedback.html" class="btn btn-primary">open Feedbacks</a>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
     

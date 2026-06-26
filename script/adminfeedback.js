@@ -1,6 +1,49 @@
 import { FEEDBACKAPI } from "./api.js"; 
 
 
+
+//filter options
+
+let departmentFilter = document.getElementById('departmentFilter') 
+let statusFilter = document.getElementById('statusFilter')
+let searchTitle = document.getElementById('searchTitle') 
+let ratingFilter = document.getElementById('ratingFilter')
+
+//dynamic filtering 
+async function dynamicFiltering(){
+    let feedbacksData = await fetch(FEEDBACKAPI) 
+    let feedbacks = await feedbacksData.json() 
+    let rating = localStorage.getItem('rating') || 'All' 
+    let department = localStorage.getItem('department') || 'All' 
+    let status = localStorage.getItem('status') || 'All' 
+
+    if(rating != 'All') {
+        feedbacks = feedbacks.filter(feedback => Number(feedback.rating) >= Number(rating) ) 
+    }
+
+    if(department != 'All') {
+        feedbacks = feedbacks.filter(feedback => feedback.department == department )  
+    }
+
+    if(status != 'All') {
+        feedbacks = feedbacks.filter(feedback => feedback.status == status )  
+    }
+    departmentFilter.value = department 
+    statusFilter.value = status 
+    ratingFilter.value = Number(rating) 
+    console.log(Number(rating));
+    
+    localStorage.removeItem('rating')
+    localStorage.removeItem('department')
+    localStorage.removeItem('status')
+
+
+
+    createFeedback(feedbacks)
+
+}
+
+
 //displaying the feedbacks 
 
 //creatung feedback
@@ -28,7 +71,6 @@ function createFeedback(feedbacks){
         for(let i = 1 ; i<= n ; i++){
             stars += '⭐'
         }
-        console.log(stars);
         
         
         body.innerHTML += `
@@ -58,13 +100,17 @@ function createFeedback(feedbacks){
 async function displayFeedback(){
     let feedbacksData = await fetch(FEEDBACKAPI) 
     let feedbacks = await feedbacksData.json()
-    console.log(feedbacks);
     
     feedbacks.sort((a,b) => new Date(b.createdOn) - new Date(a.createdOn))
     createFeedback(feedbacks)
 }
 
+if(localStorage.getItem('department') || localStorage.getItem('status') || localStorage.getItem('rating')) {
+    dynamicFiltering()
+}
+else{
 displayFeedback()
+}
 
 
 //loading data in view model  
@@ -89,11 +135,9 @@ let currentFeedback ;
 document.addEventListener('click' , async function(event){
     if(event.target.classList.contains('viewBtn')) {
         currentFeedback = event.target.dataset.id ; 
-        console.log(currentFeedback);
         
         let feedbackData = await fetch(`${FEEDBACKAPI}/${currentFeedback}`) 
         let data = await feedbackData.json() 
-        console.log(data);
         
         modalName.innerText = data.username 
         let stars = '' 
@@ -168,12 +212,6 @@ saveResponse.addEventListener('click' , async function(){
 
 
 //filtering 
-
-
-let departmentFilter = document.getElementById('departmentFilter') 
-let statusFilter = document.getElementById('statusFilter')
-let searchTitle = document.getElementById('searchTitle') 
-let ratingFilter = document.getElementById('ratingFilter')
 
 
 async function filterFeedback(){
