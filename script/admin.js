@@ -130,6 +130,28 @@ document.addEventListener('click' , async function(event){
         modalFeedback.innerText = data.feedback
         title.innerText = data.title
     }
+    else if(event.target.classList.contains('logoutBtn')) {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "Do you want Logout ?",
+            icon: "warning",
+            showCancelButton: true,
+            reverseButtons: true, // Confirm button moves to the right
+            confirmButtonColor: "#d33", 
+            cancelButtonColor:"#3085d6",
+            confirmButtonText: "Yes, Logout!"
+        }).then( (result) => {
+            if (result.isConfirmed) {
+                localStorage.removeItem('user')
+                Swal.fire({
+                    title: "Logged Out!",
+                    text: "The user has been logged out.",
+                    icon: "success"
+                });
+                window.location.href = './login.html'
+            }
+        });    
+    }
 })
 
 
@@ -145,6 +167,11 @@ async function calculateDistribution(){
     let two = 0 
     let one = 0 
     let n = feedbacks.length
+    let health = 0 
+    let administration = 0 
+    let lawAndOrder = 0 
+    let infrastructure = 0 
+
 
     feedbacks.forEach(feedback => {
         if(feedback.rating == 5) {
@@ -162,9 +189,13 @@ async function calculateDistribution(){
         else if(feedback.rating == 1 ) {
             one ++
         }
+
+        //for avg rating dept wise
+        if(feedback.department == '')
     })
 
     //count  
+    document.querySelector('.totalFeedbackCount').innerText = `(Total Feedback - ${n})`
     document.querySelector('.fiveCount').innerText = `(${five})` 
     document.querySelector('.fourCount').innerText = `(${four})` 
     document.querySelector('.threeCount').innerText = `(${three})` 
@@ -216,3 +247,5 @@ averageRatingView.addEventListener('click' , function(){
     localStorage.setItem('rating' , rating.textContent)
     window.location.href = './adminfeedback.html'
 })
+
+

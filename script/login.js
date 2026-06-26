@@ -20,7 +20,8 @@ loginBtn.addEventListener('click' , async function(){
 
     let userData = await fetch(`${USERSAPI}?email=${email.value}&password=${password.value}`) 
     let user = await userData.json() 
-
+    console.log(user);
+    
     if(user.length == 1 && role.value == 'User') {
         if (user[0].role == 'User' ) {
         localStorage.setItem('user' , JSON.stringify(user[0]))

@@ -99,7 +99,7 @@ function createFeedback(feedbacks){
 async function displayFeedback(){
     let feedbackData = await fetch(FEEDBACKAPI) 
     let feedbacks = await feedbackData.json() 
-    let userFeedbacks = feedbacks.filter(feedback => feedback.userId = user.id)
+    let userFeedbacks = feedbacks.filter(feedback => feedback.userId == user.id)
     userFeedbacks.sort((a,b)=>{
         return new Date(b.createdOn) - new Date(a.createdOn) 
     })

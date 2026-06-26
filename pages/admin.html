@@ -213,40 +213,87 @@
             </div>
 
             <!--Rating bar chart--> 
-            <div class="card shadow-sm w-50">
-                <div class="card-header bg-white">
-                    <h5 class="mb-0">
-                        Rating Distribution
-                    </h5>
-                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="card shadow-sm ">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">
+                                    Rating Distribution <span class="totalFeedbackCount"></span>
+                                </h5>
+                            </div>
 
-                <div class="card-body">
-                    <p class="mb-1">⭐⭐⭐⭐⭐ <span class="fiveCount text"></span></p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success fiveStar" ></div>
-                    </div>
-                    
-                    <p class="mb-1">⭐⭐⭐⭐ <span class="fourCount text"></span></p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-primary fourStar" ></div>
+                            <div class="card-body">
+                                <p class="mb-1">⭐⭐⭐⭐⭐ <span class="fiveCount text"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success fiveStar" ></div>
+                                </div>
+                                
+                                <p class="mb-1">⭐⭐⭐⭐ <span class="fourCount text"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-primary fourStar" ></div>
+                                </div>
+
+                                <p class="mb-1">⭐⭐⭐ <span class="threeCount text"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-info threeStar"></div>
+                                </div>
+
+                                <p class="mb-1">⭐⭐ <span class="twoCount text"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-warning twoStar" ></div>
+                                </div>
+
+                                <p class="mb-1">⭐ <span class="oneCount text"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger oneStar" ></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="mb-1">⭐⭐⭐ <span class="threeCount text"></span></p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info threeStar"></div>
+
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-white">
+                                <h5 class="b-0">
+                                    Department Wise Average Rating
+                                </h5>
+                            </div>
+
+                            <div class="card-body">
+                                <p class="mb-1">Health Care <span class="healthCount text"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success healthCareWidth"></div>
+                                </div>
+
+                                <p class="mb-1">Infrastructure <span class="infrastructureCount text"></span></p> 
+                                <div class="progress mb-3">
+                                    <div class="progress-bar infrastructureWidth"></div>
+                                </div>
+
+                                <p class="mb-1">Law and Order <span class="lawAndOrderCount"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar lawAndOrderWidth"></div>
+                                </div>
+
+                                <p class="mb-1">Administration <span class="administrationCount"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar administrationWidth"></div>
+                                </div>
+
+                                <p class="mb-1">Overall Average <span class="overallCount"></span></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar overallWidth"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="mb-1">⭐⭐ <span class="twoCount text"></span></p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-warning twoStar" ></div>
-                    </div>
-
-                    <p class="mb-1">⭐ <span class="oneCount text"></span></p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger oneStar" ></div>
-                    </div>
                 </div>
             </div>
+            
             
         </main>
     </div>
@@ -383,6 +430,7 @@
     
     <script type="module" src="../script/admin.js"></script>
     <script type="module" src="../script/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
