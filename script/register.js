@@ -55,7 +55,8 @@ registerBtn.addEventListener('click' , async function(){
             email:email.value , 
             password:password.value ,
             role:'User' , 
-            createdOn:new Date().toISOString() 
+            createdOn:new Date().toISOString() , 
+            phone : 'NA'
         }
 
         await fetch(USERSAPI , {

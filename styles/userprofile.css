@@ -1,0 +1,22 @@
+.img{
+    max-width: 120px ;
+    position: relative;
+}
+
+.img-div{
+    position: relative;
+}
+
+.camara-icon{
+    position: absolute ; 
+    bottom: 5px;
+    left: 90px;
+    transition: 0.1s;
+}
+
+.camara-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
