@@ -72,35 +72,37 @@ a{
     cursor: pointer;
 }
 
-.Responded{
-    background-color: #22C55E !important;
-    color: white;
-}
-
-.Pending{
-    background-color: #F59E0B !important;
-    color: white;
-}
 .purple{
     background: purple !important;
 }
 
+.Responded{
+    background-color: #86EFAC !important;
+    color: #14532D !important;
+}
+
+.Pending{
+    background-color: #FCD34D !important;
+    color: #92400E !important;
+}
+
+
 .Health{
-    background-color: #22C55E !important;   /* Green */
-    color: white;
+    background-color: #86EFAC !important;
+    color: #14532D !important;
 }
 
 .Infrastructure{
-    background-color: #0D6EFD !important;   /* Blue */
-    color: white;
+    background-color: #93C5FD !important;
+    color: #1E3A8A !important;
 }
 
 .Law{
-    background-color: #DC3545 !important;   /* Red */
-    color: white;
+    background-color: #FCA5A5 !important;
+    color: #7F1D1D !important;
 }
 
 .Administration{
-    background-color: #6F42C1 !important;   /* Purple */
-    color: white;
+    background-color: #C4B5FD !important;
+    color: #4C1D95 !important;
 }

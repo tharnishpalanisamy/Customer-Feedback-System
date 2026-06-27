@@ -1,12 +1,14 @@
+
 .Responded{
-    background-color: #22C55E !important;
-    color: white;
+    background-color: #86EFAC !important;
+    color: #14532D !important;
 }
 
 .Pending{
-    background-color: #F59E0B !important;
-    color: white;
+    background-color: #FCD34D !important;
+    color: #92400E !important;
 }
+
 
 i.bi{
     display: inline-block;
@@ -37,21 +39,21 @@ i.bi:hover{
 }
 
 .Health{
-    background-color: #22C55E !important; 
-    color: white;
+    background-color: #86EFAC !important;
+    color: #14532D !important;
 }
 
 .Infrastructure{
-    background-color: #0D6EFD !important;   
-    color: white;
+    background-color: #93C5FD !important;
+    color: #1E3A8A !important;
 }
 
 .Law{
-    background-color: #DC3545 !important;  
-    color: white;
+    background-color: #FCA5A5 !important;
+    color: #7F1D1D !important;
 }
 
 .Administration{
-    background-color: #6F42C1 !important;  
-    color: white;
+    background-color: #C4B5FD !important;
+    color: #4C1D95 !important;
 }

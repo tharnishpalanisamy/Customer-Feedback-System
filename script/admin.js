@@ -69,9 +69,9 @@
             <tr>
                 <td>${feedback.title}</td>
                 <td>${feedback.username}</td>
-                <td class = '${feedback.department} text'>${feedback.department}</td>
+                <td class = '${feedback.department}'>${feedback.department}</td>
                 <td>${stars}</td>
-                <td class = '${feedback.status} text'>${feedback.status}</td>
+                <td class = '${feedback.status}'>${feedback.status}</td>
                 <td class="text-center">
                     <button class="btn btn-sm btn-primary viewBtn" data-id = ${feedback.id}  data-bs-toggle="modal" data-bs-target="#viewFeedbackModal" >
                         <i class="bi bi-eye me-1"></i> View

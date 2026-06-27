@@ -73,9 +73,9 @@ function createFeedback(feedbacks){
             <td>${index+1}</td>
             <td>${feedback.title}</td>
             <td>${stars}</td>
-            <td>${feedback.department}</td>
+            <td class = '${feedback.department}' >${feedback.department}</td>
             <td>${feedback.feedback}</td>
-            <td class = '${feedback.status} text'>${feedback.status}</td>
+            <td class = '${feedback.status} '>${feedback.status}</td>
             <td>${createdDate.getDate()}-${createdDate.getMonth()}-${createdDate.getFullYear()}</td>
             <td class = 'text-center'>
             ${feedback.respondedOn? `${responseDate.getDate()}-${responseDate.getMonth()}-${responseDate.getFullYear()}`
@@ -255,3 +255,7 @@ saveBtn.addEventListener('click' , async function(){
     modal.hide()
     
 })
+
+
+
+

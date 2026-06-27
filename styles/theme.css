@@ -76,11 +76,13 @@
     color: var(--primary-hover) !important;
 }
 .Active-bg{
-    background-color: var(--primary-hover) !important;
+    background-color: #D1FAE5 !important;
+    color: #065F46 !important;
 }
 
 .In {
-    background-color: rgb(211, 42, 42) !important;
+    background-color: #FEE2E2 !important;
+    color: #B91C1C !important;
 }
 
 

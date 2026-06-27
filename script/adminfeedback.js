@@ -2,6 +2,7 @@ import { FEEDBACKAPI } from "./api.js";
 
 
 
+
 //filter options
 
 let departmentFilter = document.getElementById('departmentFilter') 
@@ -78,10 +79,10 @@ function createFeedback(feedbacks){
             <td>${index+1}</td>
             <td>${feedback.title}</td>
             <td>${feedback.username}</td>
-            <td class = '${feedback.department} text'>${feedback.department}</td>
+            <td class = '${feedback.department}'>${feedback.department}</td>
             <td>${stars}</td>
             <td>${createdDate.getDate()}-${createdDate.getMonth()}-${createdDate.getFullYear()}</td>
-            <td class = '${feedback.status} text'>${feedback.status}</td>
+            <td class = '${feedback.status}'>${feedback.status}</td>
             <td>
                 <i class="bi bi-eye-fill active viewBtn fs-5" title="View" data-id = ${feedback.id} data-bs-toggle="modal" data-bs-target="#viewFeedbackModal"></i>
 
@@ -297,4 +298,81 @@ searchTitle.addEventListener('input' ,async function(){
 ratingFilter.addEventListener('change' , async function(){
     await filterFeedback()
     searchTitle.value = ''
+})
+
+
+
+
+//pagination 
+
+const items = 10 
+let totalPages = 0 
+let currentPage = 1 
+
+
+let pagination  = document.querySelector('.pagination') 
+
+async function createPages(){
+    let feedbackData = await fetch(FEEDBACKAPI) 
+    let feedbacks = await feedbackData.json() 
+
+    totalPages = Math.ceil(feedbacks.length / items ) 
+    
+    pagination.innerHTML = `
+    <li class = 'page-item ${currentPage == 1 ? 'disabled' : ''}'  >
+        <button class = 'pageBtn page-link' data-type = 'previous'>Previous
+        </button>
+    </li>`
+
+    for(let i = 1 ; i<= totalPages ; i++) {
+        pagination.innerHTML += `
+        <li class = 'page-item  ${i == currentPage ? 'active' : ''} '>
+            <button class = 'page-link pageBtn' data-page = '${i}' > ${i}
+            </button>
+        </li>`
+    }
+
+    pagination.innerHTML += `
+        <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
+            <button class="page-link pageBtn" data-type="next">
+                Next
+            </button>
+        </li> `
+}
+
+
+async function showPage(){
+    let feedbacksData = await fetch(FEEDBACKAPI) 
+    let feedbacks = await feedbacksData.json()
+    let start = (currentPage - 1 ) * items 
+    let end = start + items
+    let currentFeedbacks = feedbacks.slice(start , end) 
+    createFeedback(currentFeedbacks) 
+    await createPages()
+}
+
+showPage()
+
+
+//clicking each page 
+
+pagination.addEventListener('click' , async function(event){
+    if(event.target.classList.contains('pageBtn')) {
+        let type = event.target.dataset.type 
+
+        if(type == 'previous') {
+            if(currentPage > 1) {
+                currentPage --
+            }
+        }
+        else if(type == 'next') {
+            if (currentPage < totalPages) {
+                currentPage ++
+            }
+        }
+        else{
+            currentPage = Number(event.target.dataset.page)
+        }
+        await showPage() 
+    }
 })

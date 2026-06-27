@@ -1,10 +1,14 @@
+
 .Responded{
-    background: #33a65f !important;
+    background-color: #86EFAC !important;
+    color: #14532D !important;
 }
 
 .Pending{
-    background: #EAB308 !important;
+    background-color: #FCD34D !important;
+    color: #92400E !important;
 }
+
 
 .undefined{
     background: #33a65f !important;
@@ -16,4 +20,24 @@ i{
 
 .blocked{
     cursor: not-allowed !important;
+}
+
+.Health{
+    background-color: #86EFAC !important;
+    color: #14532D !important;
+}
+
+.Infrastructure{
+    background-color: #93C5FD !important;
+    color: #1E3A8A !important;
+}
+
+.Law{
+    background-color: #FCA5A5 !important;
+    color: #7F1D1D !important;
+}
+
+.Administration{
+    background-color: #C4B5FD !important;
+    color: #4C1D95 !important;
 }
