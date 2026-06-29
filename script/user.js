@@ -12,7 +12,7 @@ toastr.options = {
 //getting the user 
 let user = JSON.parse(localStorage.getItem('user')) || '' 
 if(!user) {
-    alert('Please login first') 
+    toastr.warning('Please login first') 
     window.location.href = './login.html' 
 }
 

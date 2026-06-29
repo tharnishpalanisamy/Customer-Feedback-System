@@ -417,7 +417,8 @@
       "role": "User",
       "createdOn": "2026-06-28T05:50:16.078Z",
       "phone": "NA",
-      "id": "vvS-b6jMSrE"
+      "id": "vvS-b6jMSrE",
+      "status": "Active"
     },
     {
       "name": "Tharnish p",
@@ -436,7 +437,8 @@
       "role": "User",
       "createdOn": "2026-06-29T15:12:39.770Z",
       "phone": "9791330226",
-      "id": "5MNf0A4QVrM"
+      "id": "5MNf0A4QVrM",
+      "status": "Active"
     },
     {
       "name": "Tharnish Palanisamy",
