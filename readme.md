@@ -160,6 +160,9 @@ Screenshots
 ![admindashboard Page](assets/screenshots/admindashboard.png)
 ![admindashboard2 Page](assets/screenshots/admindashboard2.png)
 
+##view feedback
+![view](assets/screenshots/view%20feedback.png)
+
 
 ## admin Feedback 
 ![adminfeedback Page](assets/screenshots/adminfeedback.png)
